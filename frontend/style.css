@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    flex: 1;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 350px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.controls select, .controls button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.traffic-toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.traffic-toggle label {
+    margin-right: 10px;
+}
+
+#find-route {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#route-info h3 {
+    margin-top: 0;
+}
+
+#directions {
+    list-style-type: none;
+    padding: 0;
+}
+
+#directions li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#stats {
+    margin-top: 20px;
+    font-weight: bold;
+}

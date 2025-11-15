@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune GPS Navigation</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div class="sidebar">
+        <h2>Pune GPS Navigation</h2>
+        <div class="controls">
+            <label for="source">Source:</label>
+            <select id="source"></select>
+
+            <label for="destination">Destination:</label>
+            <select id="destination"></select>
+
+            <div class="traffic-toggle">
+                <label for="traffic">Heavy Traffic:</label>
+                <input type="checkbox" id="traffic">
+            </div>
+
+            <button id="find-route">Find Route</button>
+        </div>
+        <div id="route-info">
+            <h3>Directions</h3>
+            <ul id="directions"></ul>
+            <div id="stats">
+                <p><strong>Distance:</strong> <span id="distance">-</span> km</p>
+                <p><strong>Time:</strong> <span id="time">-</span> minutes</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
